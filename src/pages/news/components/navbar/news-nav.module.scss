@@ -4,7 +4,7 @@
   border-bottom: 1px solid rgba(221, 221, 221, 0.9);
 
   .header-wrapper {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -84,7 +84,7 @@
 @media screen and (min-width: 990px) {
   .news-header {
     .header-wrapper {
-      width: 93%;
+      width: 88%;
     }
 
     .top-right-corner {
@@ -95,5 +95,13 @@
       display: none;
     }
     
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .news-header {
+    .header-wrapper {
+      width: 93%;
+    }
   }
 }
