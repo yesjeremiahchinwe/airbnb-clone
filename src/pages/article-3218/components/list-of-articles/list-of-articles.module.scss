@@ -1,0 +1,109 @@
+.list_of_articles_container {
+  width: 85%;
+  margin: 0 auto 2rem;
+
+  .wrapper {
+    width: 100%;
+    padding: 3rem 0 1rem;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.9);
+
+    &:last-of-type {
+      border-bottom: 0px transparent;
+      padding-bottom: 0;
+    }
+  }
+
+  p {
+    color: #222222;
+    font-weight: 400;
+    font-size: 1.03rem;
+    padding-top: 0.25rem;
+
+    a {
+      color: #000;
+      text-decoration: underline;
+    }
+  }
+
+  h5 {
+    color: #717171;
+    font-size: 1rem;
+    padding-bottom: 0.25rem;
+  }
+
+  h6 {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: 1.03rem;
+    text-decoration: underline;
+  }
+
+  ol {
+    margin: 0 0.75rem;
+
+    li {
+      margin: 1rem 0;
+    }
+  }
+
+  .disclaimer {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    margin: 3rem 0 2rem;
+    border: 1px solid rgba(221, 221, 221, 0.9);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+
+    p {
+      font-size: 0.9rem;
+      line-height: 1rem;
+    }
+  }
+
+  .helpQuestion {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0 2rem;
+    align-items: center;
+    gap: 1.5rem;
+
+    h6 {
+      font-size: 1.25rem;
+      margin: 0;
+      text-decoration: none;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    span {
+      text-decoration: underline;
+      color: #000;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .list_of_articles_container {
+    width: 80%;
+
+    .wrapper {
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .list_of_articles_container {
+    width: 50%;
+  }
+}

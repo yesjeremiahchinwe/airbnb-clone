@@ -1,0 +1,136 @@
+.menu_list_container {
+  width: 100%;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.5);
+  position: sticky;
+  top: 80px;
+  left: 0;
+  background-color: #fff;
+  z-index: 20;
+  padding: 0.5rem 0.5rem;
+}
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.menu-list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: repeat(61, 1fr);
+  background-color: #fff;
+  flex-grow: 1;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+  position: relative;
+  overflow-y: hidden;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: rgb(218, 216, 216);
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #717171;
+    }
+  }
+
+  .next-prev-navigation {
+    position: absolute;
+    padding: 0 1rem;
+    border-radius: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(-100%);
+
+    .navigation {
+      position: absolute;
+      font-size: 1rem;
+      font-size: 2rem;
+      background-color: blue;
+      padding: 0 1rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &.next {
+        right: 0%;
+      }
+    }
+  }
+}
+
+.filter-options {
+  display: none;
+  align-items: flex-start;
+  gap: 1.2rem;
+  margin: 0 auto;
+
+  .hide_filter {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .menu_list_container {
+    border-top: 1px solid rgba(221, 221, 221, 0.5);
+    border-bottom: 0px transparent;
+  }
+
+  .wrapper {
+    padding-top: 1.5rem;
+    top: 80px;
+  }
+
+  .filter-options {
+    display: flex;
+    width: fit-content;
+
+    .hide_filter {
+      display: flex;
+    }
+  }
+
+  .menu-list {
+    scrollbar-width: unset;
+    border-bottom: 0px transparent;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .wrapper {
+    top: 80px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .wrapper {
+    width: 94%;
+  }
+}

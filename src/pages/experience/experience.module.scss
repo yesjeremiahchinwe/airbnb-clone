@@ -1,0 +1,32 @@
+.experience_footer {
+  display: none;
+}
+
+.weekend_load_more {
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  width: fit-content;
+  display: block;
+  margin: 4rem auto 3rem;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: #000;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    width: fit-content;
+    display: block;
+    margin: 4rem auto 3rem;
+    border-radius: 10px;
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .experience_footer {
+    display: block;
+    margin-top: 3rem;
+  }
+}

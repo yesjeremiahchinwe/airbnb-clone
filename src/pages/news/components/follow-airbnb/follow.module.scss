@@ -1,0 +1,131 @@
+.follow_airbnb {
+  width: 100%;
+  padding: 3rem 0;
+
+  h3 {
+    font-size: 1.5rem;
+    width: 88%;
+    max-width: 1440px;
+    font-weight: 600;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+  }
+
+  .wrapper {
+    width: 91%;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .news_box {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+
+    h4 {
+      font-size: 1.35rem;
+      padding: 0.75rem 0 0;
+      margin: 0;
+      width: 100%;
+
+      span {
+        white-space: pre;
+      }
+    }
+
+    small {
+      margin-top: 0.4rem;
+      display: block;
+      font-weight: 500;
+      color: #7e7e7e;
+    }
+
+    .learn_more {
+      display: block;
+      margin: 2rem 0 0;
+      font-weight: 600;
+      border: 1px solid rgba(0, 0, 0, 0.9);
+      border-radius: 8px;
+      background-color: transparent;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  .second_order {
+    display: none;
+  }
+
+  .social_buttons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    div {
+      width: 45px;
+      height: 45px;
+      margin: 2rem 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(0, 0, 0, 0.9);
+      border-radius: 50%;
+    }
+  }
+}
+
+
+@media screen and (min-width: 750px) {
+  .follow_airbnb {
+    .wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .second_order {
+      display: flex;
+    }
+  }
+  
+}
+
+
+@media screen and (min-width: 990px) {
+  .follow_airbnb {
+    .wrapper {
+      width: 88%;
+      margin: 0 auto;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .news_box {
+      h4 {
+        width: 95%;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .follow_airbnb {
+    .wrapper {
+      width: 87%;
+    }
+  }
+}

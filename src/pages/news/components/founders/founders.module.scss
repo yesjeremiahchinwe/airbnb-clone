@@ -1,0 +1,134 @@
+.founders_container {
+  width: 100%;
+
+  .news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 91%;
+    margin: 5rem auto 0;
+    padding-bottom: 5rem;
+  }
+
+  a {
+    color: #000;
+  }
+
+  .desc {
+    flex-basis: 35%;
+
+    .read {
+      width: 100%;
+      margin-top: 0;
+    }
+
+    .read_more {
+      display: block;
+      margin: 0 auto 1rem;
+      font-weight: 600;
+      border: 1px solid rgba(0, 0, 0, 0.9);
+      border-radius: 8px;
+      background-color: transparent;
+      padding: 0.5rem 1rem;
+
+      &:hover {
+        background-color: rgba(221, 221, 221, 0.4);
+      }
+    }
+  }
+
+  small {
+    color: #717171;
+    font-weight: 400;
+    margin-bottom: 0.35rem;
+    display: block;
+  }
+
+  h2 {
+    width: 100%;
+    font-size: 1.45rem;
+    line-height: 1.85rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 0.25rem;
+    text-align: center;
+  }
+
+  .img_wrapper {
+    flex-basis: 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .founders_container {
+    .news {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    h2 {
+      width: 100%;
+      font-size: 1.75rem;
+      line-height: 2.1rem;
+      margin: 0;
+      text-align: start;
+    }
+
+    p {
+      font-size: 1.25rem;
+      font-weight: 400;
+      padding-top: 0.15rem;
+      text-align: start;
+    }
+
+    .desc {
+      .read_more {
+        margin: 2rem 0 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .founders_container {
+    h2 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+
+    .news {
+      width: 88%;
+    }
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .founders_container {
+    h2 {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    .news {
+      width: 87%;
+    }
+  }
+}

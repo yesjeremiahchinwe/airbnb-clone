@@ -1,0 +1,79 @@
+
+a {
+  font-weight: 500;
+  color: #222222;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #000000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+:root {
+  --f-qa-d-e-p: #FFFFFF;
+  --li-c-a-qz: #F7F7F7;
+  --g-xa-pn-j: #F7F7F7;
+  --o-x-kcq: #F7F7F7;
+  --aua-v-d: #FFF8F6;
+  --i-zbcp: #F7F7F7;
+  --lg-v-c-cr: #222222;
+  --c-e-bml-r: #000000;
+  --h-o-fh-iz: #DDDDDD;
+  --i-eilcb: #C13515;
+  --b-k-n-zh-j: #B32505;
+  --j-z-zu-f-d: #B0B0B0;
+  ---c-ay-fd: #717171;
+  --i-bz-n-m-x: #EBEBEB;
+  --kt-r-wt-q: #FF385C;
+  --c-thx-e-f: #92174D;
+  --i-s-sg-z-d: #460479;
+  --i-p-lrdu: linear-gradient(to right,#E61E4D 0%,#E31C5F 50%,#D70466 100%);
+  --d-m-l-dg-i: linear-gradient(to left,#E61E4D 0%,#E31C5F 50%,#D70466 100%);
+  --c-un-h-d: linear-gradient(to right,#BD1E59 0%,#92174D 50%,#861453 100%);
+  --kzhlh-v: linear-gradient(to left,#BD1E59 0%,#92174D 50%,#861453 100%);
+  --h-aoccx: linear-gradient(to right,#59086E 0%,#460479 50%,#440589 100%);
+  --i-stlhz: linear-gradient(to left,#59086E 0%,#460479 50%,#440589 100%);
+  --d-mit-ds: radial-gradient(circle at center,#FF385C 0%,#E61E4D 27.5%,#E31C5F 40%,#D70466 57.5%,#BD1E59 75%,#BD1E59 100%);
+  --f-op-j-c-n: radial-gradient(circle at center,#D70466 0%,#BD1E59 30%,#92174D 55%,#861453 72.5%,#6C0D63 90%,#6C0D63 100%);
+  --ffpoh-t: radial-gradient(circle at center,#6C0D63 0%,#59086E 30%,#460479 55%,#440589 72.5%,#3B07BB 90%,#3B07BB 100%);
+  --i-b-h-ix-d: #222222;
+  --j-g-mn-mr: #DDDDDD;
+  --b-jj-f-m-n: #000000;
+  --g-uvox-l: #C13515;
+  --g-k-rhex: #B32505;
+  --jp-ez-n-d: #FFFFFF;
+  --h-xc-cb-r: #717171;
+  --r-kb-kp: #DDDDDD;
+  --knep-c-n: #C13515;
+  --if-m-n-f-l: #B32505;
+  --h-j-galk: #428BFF;
+  --jzj-z-de: linear-gradient(to right,#E61E4D 0%,#E31C5F 50%,#D70466 100%);
+  --izo-zd-z: #222222;
+  --g-wkfj-r: #DDDDDD;
+  --io-d-q-z-d: #000000;
+  --fu-zqop: #C13515;
+  --dpuv-k-h: #B32505;
+  --g-fcrld: #FFFFFF;
+  --in-mo-w-p: #717171;
+  --g-o-p-snl: #222222;
+  --j-i-ygw-o: #222222;
+  --bdidy-p: #F7F7F7;
+  --b-x-menh: #C13515;
+  --oo-c-cj: #E07912;
+}
+

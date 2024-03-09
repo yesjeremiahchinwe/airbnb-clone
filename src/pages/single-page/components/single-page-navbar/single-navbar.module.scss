@@ -1,0 +1,136 @@
+.single-header {
+  width: 100%;
+  background-color: #fff;
+  height: 80px;
+  z-index: 50;
+  display: none;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.5);
+}
+
+.single-header-wrapper {
+  width: 100%;
+  max-width: 86%;
+  margin: 0 auto;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+
+  .logo {
+    width: 100%;
+    width: 17%;
+  }
+}
+
+.top-right-corner {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0.75rem;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  div {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    border: 1px solid rgba(221, 221, 221, 0.8);
+    border-radius: 30px;
+    padding: 0.5rem 0.7rem;
+    flex-wrap: nowrap;
+    width: fit-content;
+  }
+}
+
+.single-sub-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 50px;
+  background-color: #fff;
+  margin: 0 auto;
+  border: 2px solid rgba(221, 221, 221, 0.8);
+  border-radius: 60px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+
+  .divider {
+    width: 1px;
+    height: 20px;
+    background-color: rgba(221, 221, 221, 0.8);
+  }
+
+  .filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    height: 100%;
+    width: fit-content;
+    cursor: pointer;
+    padding: 0 1rem;
+    margin: 0 auto;
+    flex-grow: 1;
+  }
+
+  h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    white-space: pre;
+    padding-top: 0.25rem;
+
+    &:last-of-type {
+      color: #717171;
+    }
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 2rem;
+    padding: 0 0.35rem 0 1rem;
+
+    &:hover {
+      background-color: rgba(221, 221, 221, 0.5);
+      border-radius: 60px;
+    }
+
+    .desc {
+      display: grid;
+      place-content: center;
+      font-size: 0.9rem;
+    }
+
+    .search-icon {
+      background-color: #ff385c;
+      border-radius: 50%;
+      width: fit-content;
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .single-header {
+    display: flex;
+
+    .single-header-wrapper {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .single-header {
+    .single-header-wrapper {
+      max-width: 55%;
+    }
+  }
+}

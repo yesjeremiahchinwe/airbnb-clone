@@ -1,0 +1,48 @@
+.fixed-footer-container {
+  position: fixed;
+  bottom: 0;
+  z-index: 20;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding-top: 0.75rem;
+  transition: all 0.5s ease;
+
+  &.fixed {
+    bottom: 0;
+  }
+
+  &.hide {
+    bottom: -50%;
+    transition: all 2s ease;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+    p {
+        font-size: 0.75rem;
+        color: #717171;
+    }
+
+    &:first-of-type {
+      p {
+        &:first-of-type {
+          color: #e61e4d;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .fixed-footer-container {
+    display: none;
+  }
+}

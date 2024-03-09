@@ -1,0 +1,18 @@
+
+.filter-button {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    border: 1px solid rgba(221, 221, 221, 0.8);
+    border-radius: 10px;
+    padding: 0 1rem;
+    height: 55px;
+
+    span {
+        font-size: 0.79rem;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

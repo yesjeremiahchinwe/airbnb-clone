@@ -1,0 +1,46 @@
+
+.filter-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    border: 1px solid rgba(221, 221, 221, 0.8);
+    border-radius: 10px;
+    padding: 0 1rem;
+    height: 55px;
+
+    nobr {
+        font-size: 0.79rem;
+        font-weight: 600;
+    }
+
+
+    .check-box {
+        width: 40px;
+        border-radius: 20px;
+        padding: 0.1rem 0.15rem;
+        height: 25px;
+        background-color: #b6b5b5;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #000;
+        }
+
+        &.checked {
+            justify-content: flex-end;
+            background-color: #000;
+        }
+
+        .box {
+            background-color: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+    }
+}

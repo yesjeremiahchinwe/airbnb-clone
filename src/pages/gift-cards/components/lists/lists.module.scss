@@ -1,0 +1,108 @@
+.gift-cards-list-container {
+    padding: 1rem 0;
+    margin: 0 auto;
+
+    .wrapper {
+        margin: 0 auto;
+        padding: 0 0.25rem;
+    }
+
+    .headings {
+        padding: 0 1.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+        letter-spacing: -0.1rem;
+    }
+
+    .gift-cards-images {
+        width: 100%;
+        margin: 3rem auto;
+        display: flex;
+        overflow-x: auto;
+        align-items: center;
+        flex-wrap: nowrap;
+        row-gap: 2rem;
+        padding-bottom: 1rem;
+
+        img {
+            width: 100%;
+        }
+
+        &::-webkit-scrollbar {
+            width: 3px;
+            height: 6px;
+          }
+        
+          &::-webkit-scrollbar-track {
+            background-color: transparent;
+          }
+        
+          &::-webkit-scrollbar-thumb {
+            background-color: transparent;
+            border-radius: 30px;
+          }
+        
+          &::-webkit-scrollbar-thumb {
+            background: rgb(218, 216, 216);
+            transition: all 0.3s ease;
+        
+            &:hover {
+              background-color: #717171;
+            }
+          }
+    }
+}
+
+
+@media screen and (min-width: 450px) {
+    .gift-cards-list-container {
+        h3 {
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .gift-cards-list-container {
+        width: 80%;
+
+        .wrapper {
+            width: 100%;
+        }
+
+        .headings {
+            margin: inherit auto;
+        }
+
+        h3 {
+            font-size: 4rem;
+            line-height: 4rem;
+            font-weight: 600;
+            letter-spacing: -0.1rem;
+        }
+
+        .gift-cards-images {
+            display: grid;
+            align-items: center;
+            column-gap: 1rem;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .gift-cards-list-container {
+      max-width: 1500px;
+    }
+  }

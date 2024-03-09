@@ -1,0 +1,76 @@
+.giftcard-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  height: 80px;
+  z-index: 50;
+  display: none;
+
+  &.border-bottom {
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .header-wrapper {
+    width: 100%;
+    max-width: 88%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    background-color: #fff;
+
+    .logo {
+      width: 100%;
+      width: 25%;
+    }
+  }
+
+  .top-right-corner {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    span {
+      text-decoration: underline;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    button {
+      border: none;
+      border-radius: 6px;
+      padding: 0.67rem 1.5rem;
+      display: block;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-weight: 600;
+      background-image: linear-gradient(90deg, #ff385c, #e31c5f);
+      transition: background-image 0.2s ease;
+
+      &:hover {
+        background-image: #e31c5f;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .giftcard-header {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .giftcard-header {
+    .header-wrapper {
+      max-width: 80%;
+    }
+  }
+}

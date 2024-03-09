@@ -1,0 +1,142 @@
+
+.single-page-details-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 4rem;
+    margin: 2.5rem auto;
+    padding: 0 1.25rem;
+
+    h4 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: -1rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+        margin-bottom: -0.15rem;
+
+        &:first-of-type {
+            font-size: 1.1rem;
+            margin-top: 1rem;
+        }
+    }
+}
+
+.room-features {
+    display: flex;
+    gap: 0.35rem;
+    align-items: center;
+    color: #717171;
+
+    .dot {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+
+    span {
+        color: #000;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+}
+
+.more-details {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+
+    .details-box {
+        display: flex;
+        align-content: center;
+        gap: 1.5rem;
+        padding: 0.25rem 0;
+
+        &:first-of-type {
+            border-top: 1px solid rgba(221, 221, 221, 0.5);
+            border-bottom: 1px solid rgba(221, 221, 221, 0.5);
+            padding-top: 1rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    h6 {
+        font-size: 1rem;
+        color: #000;
+        margin-bottom: 0.1rem;
+    }
+
+    p {
+        color: #717171;
+        font-size: 0.93rem;
+    }
+}
+
+.informations {
+    margin-top: 1.3rem;
+    padding: 1.7rem 0;
+    border-top: 1px solid rgba(221, 221, 221, 0.5);
+    border-bottom: 1px solid rgba(221, 221, 221, 0.5);
+
+    h5 {
+        font-size: 1.15rem;
+        font-weight: 700;
+    }
+
+    p {
+        color: #000;
+        padding-top: 0.25rem;
+        max-width: 67%;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+    
+}
+
+@media screen and (min-width: 750px) {
+    .single-page-details-wrapper {
+
+        h4 {
+            display: none;
+        }
+
+        h5 {
+            font-size: 1.5rem;
+            margin-bottom: -0.15rem;
+    
+            &:first-of-type {
+                font-size: 1.5rem;
+                margin: 0 0 -0.15rem;
+            }
+        }
+
+        .page {
+            flex-basis: 60%;
+        }
+    }
+
+    .informations {
+        p {
+            max-width: 100%;
+            
+            &:last-of-type {
+                padding-top: 0.75rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1800px) {
+    .single-page-details-wrapper {
+        max-width: 65.8%;
+    }
+  }

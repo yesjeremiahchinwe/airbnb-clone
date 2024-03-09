@@ -1,0 +1,106 @@
+
+.wallpepper-container {
+    margin: 3.5rem auto 4rem;
+    min-height: 100vh;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    max-width: 1700px;
+    background-image: url("/gift-cards/wallpeper.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    align-items: center;
+
+    .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 2rem;
+        letter-spacing: -0.1rem;
+    }
+}
+
+.corperate {
+    margin: 3rem auto;
+    padding-bottom: 4.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    padding: 0 1.25rem 4rem;
+    max-width: 1500px;
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 2rem;
+        padding-bottom: 0.75rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        width: 95%;
+    }
+
+    a {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #000;
+        text-decoration: underline;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .wallpepper-container {
+        justify-content: center;
+        margin: 3.5rem auto 8rem;
+
+        .wrap {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 93.7%;
+            margin-left: auto;
+            text-align: start;
+    
+            div {
+                width: 30%;
+            }
+        }
+
+        h2 {
+            font-size: 2.75rem;
+            line-height: 2.75rem;
+        }
+    }
+
+    .corperate {
+        grid-template-columns: repeat(2, 1fr);
+        width: 88%;
+
+        h3 {
+            font-size: 3rem;
+            font-weight: 600;
+            line-height: 3rem;
+            width: 50%;
+            max-width: 300px;
+        }
+
+        h5 {
+            font-size: 2rem;
+        }
+    }
+}

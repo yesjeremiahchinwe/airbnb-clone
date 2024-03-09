@@ -1,0 +1,119 @@
+.reviews-container {
+  border-top: 1px solid rgba(221, 221, 221, 0.5);
+  border-bottom: 1px solid rgba(221, 221, 221, 0.5);
+  padding: 2.5rem 1.25rem 0;
+  margin: 0 auto;
+
+  h5 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  p {
+    color: #717171;
+  }
+
+  .reviews {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      width: 3px;
+      height: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+      border-radius: 30px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgb(218, 216, 216);
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #717171;
+      }
+    }
+
+    .review-box {
+      border: 1px solid rgba(221, 221, 221, 0.8);
+      padding: 1.25rem;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+    }
+
+    .review {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding-bottom: 0.15rem;
+      min-width: 400px;
+
+      span {
+        color: #717171;
+      }
+
+      .date {
+        font-weight: 700;
+        color: #000;
+      }
+    }
+
+    .the-review {
+      color: black;
+      font-weight: 400;
+      max-width: 75%;
+    }
+  }
+
+  .name-location {
+    display: flex;
+    align-content: center;
+    gap: 1rem;
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        margin-top: -0.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .reviews-container {
+    .reviews {
+      .review-box {
+        flex-direction: column;
+        border: 0 solid transparent;
+        justify-content: unset;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 1800px) {
+  .reviews-container {
+      max-width: 65%;
+  }
+}

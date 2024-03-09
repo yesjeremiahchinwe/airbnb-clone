@@ -1,0 +1,134 @@
+.sub-header-wrapper {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  height: 65px;
+  z-index: 30;
+  background-color: #fff;
+  margin: 0 auto 1.2rem auto;
+  border: 2px solid rgba(221, 221, 221, 0.8);
+  border-radius: 60px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+
+  .divider {
+    width: 1px;
+    height: 30px;
+    background-color: rgba(221, 221, 221, 0.8);
+  }
+
+  &:hover {
+    .divider {
+      display: none;
+    }
+  }
+
+  .filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 0.9rem;
+    height: 100%;
+    width: fit-content;
+    cursor: pointer;
+    padding: 0 1.85rem;
+    margin: 0 auto;
+    flex-grow: 1;
+
+    &:hover {
+      background-color: rgba(221, 221, 221, 0.5);
+      border-radius: 60px;
+    }
+
+    &:first-of-type {
+      border-left: 0px solid transparent;
+    }
+  }
+
+  h6 {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  p {
+    color: #717171;
+    margin-top: -0.5rem;
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    flex-basis: 25%;
+    padding: 0 0.35rem 0 1.5rem;
+
+    &:hover {
+      background-color: rgba(221, 221, 221, 0.5);
+      border-radius: 60px;
+    }
+
+    .desc {
+      display: grid;
+      place-content: center;
+      font-size: 0.9rem;
+    }
+
+    .search-icon {
+      background-color: #ff385c;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.buttons-mobile {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 1rem auto;
+}
+
+@media screen and (min-width: 750px) {
+  .sub-header-wrapper {
+    display: flex;
+  }
+
+  .sub-header-wrapper-mobile {
+    display: none;
+    max-width: 60%;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .buttons-mobile {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .sub-header-wrapper {
+    width: 64%;
+    max-width: 900px;
+  }
+
+  .buttons-mobile {
+    display: none;
+  }
+}

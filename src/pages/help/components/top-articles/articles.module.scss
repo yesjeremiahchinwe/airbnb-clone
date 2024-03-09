@@ -1,0 +1,45 @@
+.top_articles_container {
+    margin: 3rem auto;
+    width: 80%;
+    max-width: 1300px;
+
+    .top_articles {
+        margin: 1.5rem auto;
+        display: grid;
+        gap: 1.25rem;
+
+        a {
+            color: #000;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            padding: 1rem 0;
+        }
+
+        h6 {
+            font-weight: 600;
+            font-size: 1.19rem;
+            text-decoration: underline;
+        }
+
+        p {
+            color: #717171;
+            font-weight: 400;
+        }
+    }
+}
+
+
+@media screen and (min-width: 750px) {
+    .top_articles_container {
+        .top_articles {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .top_articles_container {
+        .top_articles {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
