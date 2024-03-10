@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import FQA from "./components/FQA/FQA";
 import GiftCardFixedFooter from "./components/fixed-footer/GiftCardFixedFooter";
 import GiftCardFooter from "./components/footer/Footer";
@@ -8,6 +9,11 @@ import Wallpepper from "./components/wallpepper/Wallpepper";
 import classes from "./gifts-cards.module.scss";
 
 const GiftCards = () => {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" })
+  }, [])
+  
   return (
     <>
       <GiftCardNavbar />

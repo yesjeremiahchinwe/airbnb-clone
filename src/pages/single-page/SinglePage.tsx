@@ -21,7 +21,7 @@ const SinglePage = () => {
 
   useEffect(() => {
     setIsMounted(true);
-    document.documentElement.scrollTo({ top: 0, behavior: "auto" });
+    document.documentElement.scrollTo({ top: 0, behavior: "instant" });
   }, [])
 
 

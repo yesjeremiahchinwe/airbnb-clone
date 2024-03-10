@@ -4,12 +4,15 @@ import { FaCircleUser } from "react-icons/fa6";
 import Logo from "../logo/Logo";
 import Button from "../button/Button";
 import classes from "./navbar.module.scss";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { BiSearch } from "react-icons/bi";
+import { Link } from "react-router-dom";
+import ClickContext from "../../context/context";
 
 
 const Navbar = () => {
   const [currHeight, setCurrHeight] = useState(false);
+  const { selected, setSelected } = useContext(ClickContext)
 
   useEffect(() => {
     document.addEventListener("scroll", () => {
@@ -58,10 +61,21 @@ const Navbar = () => {
             </div>
           </section>
         ) : (
-          <div className={classes.buttons}>
-            <Button title="Stays"></Button>
-            <Button title="Experiences"></Button>
-            <Button title="Online Experience"></Button>
+          <div className={classes['middle_nav']}>
+            <span 
+            className={`${selected === 0 ? classes.selected : ""}`}
+            onClick={() => setSelected(0)}
+            >
+              Stays
+            </span>
+
+            <span 
+            className={`${selected === 1 ? classes.selected : ""}`}
+            onClick={() => setSelected(1)}
+            >
+              Experiences
+            </span>
+            <Link to="/experiences">Online Experience</Link>
           </div>
         )}
 

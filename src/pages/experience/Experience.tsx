@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import HelperFooter from "../help/components/footer/HelpFooter";
 import BestSellers from "./components/best/BestSellers";
 import Collection from "./components/collection/Collection";
@@ -9,6 +10,11 @@ import Weekend from "./components/weekend/Weekend";
 import classes from "./experience.module.scss";
 
 const Experience = () => {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" })
+  }, [])
+  
   return (
     <>
       <ExperienceNavbar />

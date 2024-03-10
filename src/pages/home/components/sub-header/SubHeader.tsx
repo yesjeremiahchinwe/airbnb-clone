@@ -1,9 +1,12 @@
 import { BiSearch } from "react-icons/bi";
 import classes from "./sub-header.module.scss";
 import Button from "../../../../components/button/Button";
-
+import { useContext } from "react";
+import ClickContext from "../../../../context/context";
 
 const SubHeader = () => {
+  const { selected } = useContext(ClickContext);
+
   return (
     <>
       {/* ---------- Desktop View -------------- */}
@@ -21,17 +24,26 @@ const SubHeader = () => {
 
         <div className={classes.divider} />
 
-        <div className={classes.filter}>
-          <h6>Check in</h6>
-          <p>Add dates</p>
-        </div>
+        {selected === 0 ? (
+          <>
+            <div className={classes.filter}>
+              <h6>Check in</h6>
+              <p>Add dates</p>
+            </div>
 
-        <div className={classes.divider} />
+            <div className={classes.divider} />
 
-        <div className={classes.filter}>
-          <h6>Check out</h6>
-          <p>Add dates</p>
-        </div>
+            <div className={classes.filter}>
+              <h6>Check out</h6>
+              <p>Add dates</p>
+            </div>
+          </>
+        ) : (
+          <div className={classes.filter}>
+            <h6>Date</h6>
+            <p>Add dates</p>
+          </div>
+        )}
 
         <div className={classes.divider} />
 

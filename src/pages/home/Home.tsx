@@ -6,6 +6,7 @@ import Navbar from "../../components/navbar";
 import SubHeader from "./components/sub-header/SubHeader";
 
 const Home = () => {
+
   return (
     <>
       <Navbar />

@@ -2,6 +2,7 @@ import { TbWorld } from "react-icons/tb";
 import classes from "./navbar.module.scss";
 import { IoIosMenu } from "react-icons/io";
 import { FaCircleUser } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const HelpNavbar = () => {
   return (
@@ -14,7 +15,7 @@ const HelpNavbar = () => {
               fill="#000"
             ></path>
           </svg>
-          <span>Help Center</span>
+          <span><Link to="/">Help Center</Link></span>
         </div>
 
         <div className={classes["top-right-corner"]}>

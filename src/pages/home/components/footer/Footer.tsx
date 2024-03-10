@@ -124,14 +124,14 @@ const Footer = () => {
             <Link to="/help/article/3218">AirCover</Link>
             <Link to="/help/article/169">ASnti-discrimination</Link>
             <Link to="/experiences">Disability support</Link>
-            <Link to="/all-topics">Cancellation options</Link>
+            <Link to="/help/all-topics">Cancellation options</Link>
             <Link to="/news">Report neighborhood concern</Link>
           </div>
 
           <div>
             <h6>Hosting</h6>
-            <Link to="/giftcards">Airbnb your home</Link>
-            <Link to="/">AirCover for Hosts</Link>
+            <Link to="/news/media-assets">Airbnb your home</Link>
+            <Link to="/giftcards">AirCover for Hosts</Link>
             <Link to="/">Hosting resources</Link>
             <Link to="/">Community forum</Link>
             <Link to="/">Hosting responsibly</Link>

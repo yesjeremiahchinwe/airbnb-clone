@@ -5,6 +5,7 @@ interface ButtonProps {
 }
 
 const Button = ({ title }: ButtonProps) => {
+
   return (
     <button className={classes.button}>
       <span>{title}</span>

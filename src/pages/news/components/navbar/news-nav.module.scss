@@ -13,6 +13,10 @@
     padding: 1.25rem 0;
     background-color: #fff;
 
+    a {
+      color: #000;
+    }
+
     .logo {
       display: flex;
       align-items: center;
@@ -30,16 +34,13 @@
   .top-right-corner {
     display: none;
     align-items: center;
-    flex-wrap: nowrap;
-    gap: 2.25rem;
+    gap: 0.75rem;
     cursor: pointer;
     flex-shrink: 0;
 
     div {
       display: flex;
-      gap: 0.25rem;
       align-items: center;
-      flex-wrap: nowrap;
 
       a {
         color: #212121;
@@ -66,13 +67,114 @@
     margin: 0;
     border-bottom: 0 transparent;
   }
+}
 
-  .hambuger_menu {
-    display: block;
-    cursor: pointer;
+/* ------------------- Mobile View ------------ */
+.mobile_menu_navigation {
+  display: block;
+  background-color: #fff;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 70;
+  transition: right 0.2s ease-in-out;
+
+  &.opened {
+    right: 0;
   }
 }
 
+.close_menu {
+  width: fit-content;
+  margin-left: auto;
+  padding: 1rem 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.hambuger_menu {
+  display: block;
+  cursor: pointer;
+}
+
+.search_wrapper {
+  width: 95%;
+  margin: 0.85rem auto;
+  position: relative;
+
+  input {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0.85rem 1rem 0.75rem 3.15rem;
+    font-size: 1rem;
+  }
+
+  span {
+    position: absolute;
+    top: 23%;
+    left: 4%;
+  }
+}
+
+.language_selection {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 1rem 0.35rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    span {
+      font-size: 1rem;
+    }
+  }
+}
+
+.mobile_links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  width: 88%;
+  margin: 1.75rem auto 0.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.9);
+
+  a {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+.social_buttons {
+  width: 88%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  div {
+    width: 45px;
+    height: 45px;
+    margin: 2rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    border-radius: 50%;
+  }
+}
 
 @media screen and (min-width: 750px) {
   .news-header {
@@ -80,13 +182,8 @@
   }
 }
 
-
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 820px) {
   .news-header {
-    .header-wrapper {
-      width: 88%;
-    }
-
     .top-right-corner {
       display: flex;
     }
@@ -94,7 +191,18 @@
     .hambuger_menu {
       display: none;
     }
-    
+  }
+
+  .mobile_menu_navigation {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .news-header {
+    .header-wrapper {
+      width: 88%;
+    }
   }
 }
 

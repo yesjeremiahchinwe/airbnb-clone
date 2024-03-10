@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import ExploreMore from "./components/explore/ExploreMore"
 import HelperFooter from "./components/footer/HelpFooter"
 import Guildes from "./components/guildes/Guildes"
@@ -7,6 +8,10 @@ import Articles from "./components/top-articles/Articles"
 
 
 const Help = () => {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" })
+  }, [])
 
   return (
     <section>

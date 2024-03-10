@@ -3,6 +3,7 @@ import classes from "./navbar.module.scss";
 import { IoIosMenu } from "react-icons/io";
 import { FaCircleUser } from "react-icons/fa6";
 import { BiSearch } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 
 const ArticleNavbar = () => {
@@ -17,7 +18,7 @@ const ArticleNavbar = () => {
               fill="#000"
             ></path>
           </svg>
-          <span>Help Center</span>
+          <span><Link to="/">Help Center</Link></span>
         </div>
 
         <div className={classes["help-search"]}>
